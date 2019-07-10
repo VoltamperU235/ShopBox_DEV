@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopBox- Home</title>
+    <link rel="fluid-icon" href="icons/cart.png" title="ShopBox">
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-xs-12 col-sm-12">
+                    <img src="icons/groceries.png" class="rounded float-left" alt="Responsive image"
+                        style="margin-bottom:25px; margin-top:25px; padding-right:0; ">
+                    <h1>ShopBox</h1>
+
+                </div>
+
+                <div class="col-md-auto">
+
+                </div>
+                <div class="col-md">
+                </div>
+                <div id="userdiv" onclick="log()" class="rounded col-md-auto col-xs-12 col-sm-12 bg-dark text-white">
+                    <div class="container">
+                        <div class="row">
+                            <div id="user" class=" col-auto text-left ">
+                            </div>
+                            <div id="userpicture" class="col" style="padding: 0px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-auto col-xs-auto">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid" id = "warning" style="margin-bottom: 15px;">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+            <div class="col-auto bg-warning rounded">
+                    Error en el codigo de barras, intentalo de nuevo.. :(
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="webpagebody">
+    </div>
+    </div>
+</body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:25px;">
+                    Settings
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" id = "agregarDB" href="/additem.html">Agregar Producto</a>
+                    <a class="dropdown-item" id="scanw" href="/scan.html">Cambiar de Red Wifi</a>
+                    <a class="dropdown-item" id = "agregaruserDB" href="/users.html">Agregar Usuario</a>
+                    <a class="dropdown-item" href="/node/Bye">Apagar Equipo</a>
+                </div>
+                <button type="button" class="btn btn-info" style="margin-top:27px;" onclick="Reset()">Recargar</button>
+                <button type="button" id="IP" class="btn btn-light" style="margin-top:27px;" >IP: 127.0.0.1</button>
+
+            </div>
+        </div>
+        <div id="end" class="col-auto">
+            <img src="icons/flatbox.png" class="rounded float-right" alt="Responsive image">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div class="col-auto">
+            VERSION ALPHA
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</html>
+
+<script src="js/index.js"></script>
+
+
+

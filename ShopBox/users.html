@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>ShopBox - Usuarios</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<header>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-xs-12 col-sm-12">
+                    <img src="icons/groceries.png" class="rounded float-left" alt="Responsive image"
+                        style="margin-bottom:25px; margin-top:25px; padding-right:0; ">
+                    <h1>ShopBox</h1>
+                </div>
+                <div class="col-md">
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-auto col-xs-auto">
+                </div>
+            </div>
+        </div>
+    </header>
+</header>
+
+<body>
+    <div class="container" style="margin-bottom: 15px;">
+        <div class="row bg-dark text-white">
+            <div class="col">
+            </div>
+            <div class="col-auto" style="font-size: 150%; font-family: INFO; padding-top: 10px;">
+                AÑADIR Usuario
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container bg-dark text-white rounded">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-auto">
+                <form method="post" action="/node/users" ajax="true">
+
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <label for="nombre">Nombre:</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" id="nombre" name="nombre" maxlength="35">
+                               </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <label for="empresa">Empresa: </label>
+                            </div>
+                            <div class="row">
+                                <input type="text" id="empresa" name="empresa" maxlength="35">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <label for="Bcode">ID Code</label>
+                            </div>
+                            <div class="row">
+                                <input type="text" id="code" name="id" maxlength="35">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col-auto">
+                            <label for="exampleFormControlSelect1">Category</label>
+                            <select name="root" class="form-control" id="exampleFormControlSelect1">
+                                <option>Regular</option>
+                                <option>Admin</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col-auto">
+                            <input style="margin-bottom:30px;" class="btn btn-lg btn-success" type="submit" id="additem"
+                                value="Submit">
+                        </div>
+                        <div class="col">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 15px;">
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div id="result" class="col-auto bg-dark text-white rounded">
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+</body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            
+        </div>
+        <div class="col-auto">
+                <div class="dropdown">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:25px;">
+                          Settings
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/index.html">INICIO</a>
+                          <a class="dropdown-item" href="/node/Bye">Apagar Equipo</a>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-info" style="margin-top:25px;" onclick="Reset()">Recargar</button>
+
+        </div>
+        <div id="end" class="col-auto">
+            <img src="icons/flatbox.png" class="rounded float-right" alt="Responsive image">
+           
+        </div>
+    </div>
+</div>
+
+</html>
+<script src="js/additem.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
